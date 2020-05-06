@@ -1,0 +1,102 @@
+<ActionBar title="Snapbots"></ActionBar>
+
+<FlexboxLayout
+    flexDirection="column"
+    justifyContent="flex-start"
+    backgroundColor="#fff"
+>
+    <StackLayout
+        class="banner"
+        backgroundImage="~/images/banner.png"
+        height="250"
+    >
+    </StackLayout>
+
+    <ScrollView flexGrow="1" orientation="vertical">
+        <FlexboxLayout
+            class="login-page"
+            backgroundColor="#242424"
+            flexDirection="column"
+            justifyContent="flex-start"
+        >
+            <StackLayout class="login-inside">
+                <TextField
+                    hint="USERNAME"
+                    text=""
+                    class="login-input"
+                ></TextField>
+                <TextField
+                    hint="PASSWORD"
+                    text=""
+                    class="login-input"
+                ></TextField>
+                <FlexboxLayout class="checkbox">
+                    <Button class="checkbox-square"></Button>
+                    <Label text="Remember me" textWrap="true"></Label>
+                </FlexboxLayout>
+                <Button class="btn-primary" [text]="'Sign in'"></Button>
+                <Label
+                    text="Forgot password?"
+                    textWrap="true"
+                    textAlignment="center"
+                    color="#fff"
+                    marginTop="15"
+                    marginBottom="15"
+                ></Label>
+            </StackLayout>
+
+            <FlexboxLayout
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="center"
+                flexWrap="wrap"
+            >
+                <Label
+                    text="Don't have an account?"
+                    textWrap="true"
+                    color="#aaa"
+                ></Label>
+                <Label
+                    text="Create account"
+                    textWrap="true"
+                    fontWeight="600"
+                    color="#fff"
+                    marginLeft="10"
+                ></Label>
+                <Label
+                    text="or login with"
+                    textWrap="true"
+                    color="#aaa"
+                    width="100%"
+                    textAlignment="center"
+                ></Label>
+                <FlexboxLayout
+                    alignItems="center"
+                    justifyContent="center"
+                    marginTop="15"
+                    marginBottom="15"
+                >
+                    <FlexboxLayout
+                        class="social-link"
+                        alignItems="center"
+                        justifyContent="center"
+                    >
+                        <Label class="fa" text="&#xf1a0;"></Label>
+                    </FlexboxLayout>
+                    <FlexboxLayout
+                        class="social-link"
+                        alignItems="center"
+                        justifyContent="center"
+                        marginLeft="10"
+                    >
+                        <Label class="fa" text="&#xf09a;"></Label>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+            </FlexboxLayout>
+
+            <FlexboxLayout justifyContent="center">
+                <Label class="btn-language" text="Change Language" marginBottom="20"></Label>
+            </FlexboxLayout>
+        </FlexboxLayout>
+    </ScrollView>
+</FlexboxLayout>
